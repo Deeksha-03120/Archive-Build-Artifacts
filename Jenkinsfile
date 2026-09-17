@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/YOUR-USERNAME/Archive-Build-Artifacts.git'
+                    url: 'https://github.com/Deeksha-03120/Archive-Build-Artifacts.git'
             }
         }
 
