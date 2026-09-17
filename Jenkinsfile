@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
 
@@ -6,13 +5,13 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/Deeksha-03120/Archive-Build-Artifacts.git'
+                    url: 'https://github.com/YOUR-USERNAME/Archive-Build-Artifacts.git'
             }
         }
 
         stage('Generate Report') {
             steps {
-                bat 'python app.py'
+                bat '"C:\Users\SENTHIL\AppData\Local\Programs\Python\Python313\python.exe" app.py'
             }
         }
 
