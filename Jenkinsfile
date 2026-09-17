@@ -1,3 +1,4 @@
+
 pipeline {
     agent any
 
@@ -11,7 +12,7 @@ pipeline {
 
         stage('Generate Report') {
             steps {
-                bat '"C:\Users\SENTHIL\AppData\Local\Programs\Python\Python313\python.exe" app.py'
+                bat 'C:/Users/SENTHIL/AppData/Local/Programs/Python/Python313/python.exe app.py'
             }
         }
 
